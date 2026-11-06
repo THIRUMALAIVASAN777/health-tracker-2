@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTrack | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dashboard-body">
+
+<div class="app-layout">
+    <aside class="sidebar">
+        <a class="brand" href="index.html">
+            <span class="brand-icon">✚</span>
+            HealthTrack
+        </a>
+
+        <p class="sidebar-label">MENU</p>
+
+        <nav class="sidebar-nav">
+            <a class="nav-item active" href="index.html">▦ Dashboard</a>
+            <a class="nav-item" href="health-records.html">♡ Health Records</a>
+            <a class="nav-item" href="bmi.html">⚖ BMI Calculator</a>
+            <a class="nav-item" href="macro.html">◉ Macro Calculator</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="sidebar-tip">
+                <span>✦</span>
+                <h3>Small steps matter.</h3>
+                <p>Build healthy habits, one day at a time.</p>
+            </div>
+            <p class="sidebar-footer">HEALTHTRACK · 2026</p>
+        </div>
+    </aside>
+
+    <main class="dashboard-main">
+        <header class="dashboard-header">
+            <div>
+                <p class="eyebrow">YOUR PERSONAL HEALTH SPACE</p>
+                <h1>Dashboard</h1>
+                <p class="muted">A clearer picture of your daily wellness.</p>
+            </div>
+            <a href="health-records.html" class="primary-link">+ Add health record</a>
+        </header>
+
+        <section class="welcome-banner">
+            <div>
+                <p class="banner-label">YOUR HEALTH JOURNEY</p>
+                <h2>Take care of yourself.</h2>
+                <p>Every healthy choice is progress. Keep showing up for yourself.</p>
+                <a href="health-records.html" class="banner-button">Log today's activity →</a>
+            </div>
+            <div class="banner-art" aria-hidden="true">♥</div>
+        </section>
+
+        <section class="section-heading">
+            <div>
+                <h2>Daily overview</h2>
+                <p class="muted">Your latest recorded health metrics</p>
+            </div>
+            <a href="health-records.html" class="text-link">View records →</a>
+        </section>
+
+        <section class="metric-grid">
+            <article class="metric-card">
+                <div class="metric-top">
+                    <span class="metric-icon icon-blue">↗</span>
+                    <span class="metric-tag">ACTIVITY</span>
+                </div>
+                <p class="metric-label">Steps</p>
+                <h3 id="dashSteps">—</h3>
+                <p class="metric-foot">Steps recorded</p>
+            </article>
+
+            <article class="metric-card">
+                <div class="metric-top">
+                    <span class="metric-icon icon-orange">ϟ</span>
+                    <span class="metric-tag">ENERGY</span>
+                </div>
+                <p class="metric-label">Calories</p>
+                <h3 id="dashCalories">—</h3>
+                <p class="metric-foot">Calories recorded</p>
+            </article>
+
+            <article class="metric-card">
+                <div class="metric-top">
+                    <span class="metric-icon icon-cyan">◉</span>
+                    <span class="metric-tag">HYDRATION</span>
+                </div>
+                <p class="metric-label">Water</p>
+                <h3 id="dashWater">—</h3>
+                <p class="metric-foot">Litres recorded</p>
+            </article>
+
+            <article class="metric-card">
+                <div class="metric-top">
+                    <span class="metric-icon icon-purple">☾</span>
+                    <span class="metric-tag">RECOVERY</span>
+                </div>
+                <p class="metric-label">Sleep</p>
+                <h3 id="dashSleep">—</h3>
+                <p class="metric-foot">Hours recorded</p>
+            </article>
+        </section>
+
+        <section class="dashboard-lower">
+            <article class="panel activity-panel">
+                <div class="panel-heading">
+                    <div>
+                        <h2>Activity overview</h2>
+                        <p class="muted">Latest saved records</p>
+                    </div>
+                    <span class="chart-badge">Steps</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="activityChart"></canvas>
+                </div>
+                <p id="chartMessage" class="muted chart-message">
+                    Save health records to see your activity.
+                </p>
+            </article>
+
+            <article class="panel quick-panel">
+                <h2>Quick tools</h2>
+                <p class="muted">Your wellness essentials</p>
+
+                <a class="quick-item" href="bmi.html">
+                    <span class="quick-icon icon-blue">⚖</span>
+                    <span class="quick-copy">
+                        <strong>BMI Calculator</strong>
+                        <small>Understand your BMI</small>
+                    </span>
+                    <span class="quick-arrow">→</span>
+                </a>
+
+                <a class="quick-item" href="macro.html">
+                    <span class="quick-icon icon-orange">◉</span>
+                    <span class="quick-copy">
+                        <strong>Macro Calculator</strong>
+                        <small>Explore daily nutrition</small>
+                    </span>
+                    <span class="quick-arrow">→</span>
+                </a>
+
+                <a class="quick-item" href="health-records.html">
+                    <span class="quick-icon icon-cyan">♡</span>
+                    <span class="quick-copy">
+                        <strong>Health Records</strong>
+                        <small>Log your daily metrics</small>
+                    </span>
+                    <span class="quick-arrow">→</span>
+                </a>
+            </article>
+        </section>
+
+        <footer class="dashboard-footer">
+            <span>© 2026 HealthTrack</span>
+            <span>Your health, your journey.</span>
+        </footer>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

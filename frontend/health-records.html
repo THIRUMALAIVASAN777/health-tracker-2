@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Health Records - HealthTracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        HealthTracker
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="bmi.html">BMI</a>
+        <a href="macro.html">Macros</a>
+        <a href="health-records.html">Health Records</a>
+    </div>
+
+    <button class="login-btn">
+        Login
+    </button>
+
+</nav>
+
+
+<div class="record-page">
+
+    <div class="record-card">
+
+        <h1>Health Record</h1>
+
+        <p>Track your daily health information</p>
+
+
+        <div class="form-group">
+
+            <label>Email</label>
+
+            <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your registered email"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Steps</label>
+
+            <input
+                    type="number"
+                    id="steps"
+                    placeholder="e.g. 10000"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Weight (kg)</label>
+
+            <input
+                    type="number"
+                    step="0.1"
+                    id="weight"
+                    placeholder="e.g. 65.5"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Calories</label>
+
+            <input
+                    type="number"
+                    id="calories"
+                    placeholder="e.g. 2400"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Water (litres)</label>
+
+            <input
+                    type="number"
+                    step="0.1"
+                    id="water"
+                    placeholder="e.g. 3"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Sleep Hours</label>
+
+            <input
+                    type="number"
+                    step="0.1"
+                    id="sleepHours"
+                    placeholder="e.g. 8"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Heart Rate</label>
+
+            <input
+                    type="number"
+                    id="heartRate"
+                    placeholder="e.g. 70"
+            >
+
+        </div>
+
+
+        <button onclick="saveHealthRecord()">
+            Save Health Record
+        </button>
+
+
+        <p id="recordMessage"></p>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

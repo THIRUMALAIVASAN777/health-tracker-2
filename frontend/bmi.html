@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BMI Calculator - HealthTracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        HealthTracker
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="bmi.html">BMI</a>
+        <a href="macro.html">Macros</a>
+        <a href="index.html#records">Health Records</a>
+    </div>
+
+    <button class="login-btn">
+        Login
+    </button>
+
+</nav>
+
+
+<div class="bmi-page">
+
+    <div class="bmi-card">
+
+        <h1>BMI Calculator</h1>
+
+        <p>
+            Calculate your Body Mass Index
+        </p>
+
+
+        <div class="form-group">
+
+            <label>Weight (kg)</label>
+
+            <input
+                    type="number"
+                    id="bmiWeight"
+                    placeholder="Enter your weight"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Height (cm)</label>
+
+            <input
+                    type="number"
+                    id="bmiHeight"
+                    placeholder="Enter your height"
+            >
+
+        </div>
+
+
+        <button type="button" onclick="calculateBMI()">
+            Calculate BMI
+        </button>
+
+
+        <div id="bmiResult" class="bmi-result">
+
+            <h2>Your BMI</h2>
+
+            <h3 id="bmiValue">0</h3>
+
+            <p id="bmiCategory">
+                Enter your details
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
+

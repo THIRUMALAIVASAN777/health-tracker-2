@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Macro Calculator - HealthTracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        HealthTracker
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#bmi">BMI</a>
+        <a href="macro.html">Macros</a>
+        <a href="index.html#records">Health Records</a>
+    </div>
+
+    <button class="login-btn">
+        Login
+    </button>
+
+</nav>
+
+
+<div class="macro-page">
+
+    <div class="macro-card">
+
+        <h1>Macro Calculator</h1>
+
+        <p>Calculate your daily calorie and macro requirements.</p>
+
+
+        <div class="form-group">
+
+            <label>Age</label>
+
+            <input
+                    type="number"
+                    id="age"
+                    placeholder="Enter your age"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Weight (kg)</label>
+
+            <input
+                    type="number"
+                    id="weight"
+                    placeholder="Enter your weight"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Height (cm)</label>
+
+            <input
+                    type="number"
+                    id="height"
+                    placeholder="Enter your height"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Gender</label>
+
+            <select id="gender">
+
+                <option value="male">
+                    Male
+                </option>
+
+                <option value="female">
+                    Female
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Activity Level</label>
+
+            <select id="activityLevel">
+
+                <option value="1.2">
+                    Sedentary
+                </option>
+
+                <option value="1.375">
+                    Lightly Active
+                </option>
+
+                <option value="1.55">
+                    Moderately Active
+                </option>
+
+                <option value="1.725">
+                    Very Active
+                </option>
+
+                <option value="1.9">
+                    Extremely Active
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <button onclick="calculateMacros()">
+            Calculate Macros
+        </button>
+
+
+        <div id="result" class="macro-result">
+
+            <h2>Your Daily Macros</h2>
+
+            <div class="macro-results-container">
+
+                <div class="macro-box">
+                    <h3 id="calories">0</h3>
+                    <p>Calories (kcal)</p>
+                </div>
+
+                <div class="macro-box">
+                    <h3 id="protein">0</h3>
+                    <p>Protein (g)</p>
+                </div>
+
+                <div class="macro-box">
+                    <h3 id="carbs">0</h3>
+                    <p>Carbs (g)</p>
+                </div>
+
+                <div class="macro-box">
+                    <h3 id="fat">0</h3>
+                    <p>Fat (g)</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

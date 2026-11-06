@@ -21,6 +21,7 @@ public class BmiService {
         } else {
             category = "Obese";
         }
+        System.out.println("bmi"+bmi);
 
         return new BmiResponseDTO(
                 Math.round(bmi * 100.0) / 100.0,
